@@ -81,7 +81,8 @@ There is a noticeable trend in values in all three features. This gives the flex
 
 I used a correlation matrix and plot the heatmap in order to get the correlation coefficients between variables. Since I want to predict the price of a diamond, I focused on the correlation between price vs all other columns using .corr().
 
-![Image(C:\Users\irene\Documents\ironhack\ih_datamadpt1121_project_m3\images)
+![Image](https://raw.githubusercontent.com/Irene9R/ih_datamadpt1121_project_m3/main/images/image1.png)
+
 
 After reviewing it, it was clear that the following features had a low score, this means they are least correlated with the price of a diamond:  
 cut  
@@ -93,6 +94,8 @@ table
 
 Although, these features have a low correlation score, I won't remove them at the moment. For a diamond specialist features like “cut”, “color” and “clarity” play a crucial role in determining the price of a diamond.
 On the other hand, studying the correlation matrix, it’s clear that the price and carat i.e. weight of a diamond has a very good correlation score. So, I inserted new features, like "cut per weight score" and drop the features like “cut”, “color” and “clarity”. 
+
+![Image](https://github.com/Irene9R/ih_datamadpt1121_project_m3/blob/main/images/image2.png?raw=true)
 
 #### 3. Scaling ####
 I have tried different methods of scaling like "StandardScaler()", "MinMaxScaler()", "RobustScaler()", "MaxAbsScaler()"; but ended up not using a scaling method as it didn´t decrease ed RMSE, more on the contrary, so I decided to work without using it. 

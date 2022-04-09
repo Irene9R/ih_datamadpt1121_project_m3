@@ -25,18 +25,18 @@ You can also download the data from kaggle: https://www.kaggle.com/competitions/
   
   
 #### Feature Description ####
-**price*:  price in USD  
-**carat*:  weight of the diamond  
-**cut*:  quality of the cut (Fair, Good, Very Good, Premium, Ideal)  
-**color*:  diamond colour, from J (worst) to D (best)  
-**clarity*:  a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))  
-**x*:  length in mm  
-**y*: width in mm  
-**z*: depth in mm  
-**depth*: total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)  
-**table*: width of top of diamond relative to widest point (43--95)  
-**city*: city where the diamonds is reported to be sold.  
-**id*: only for test & sample submission files, id for prediction sample identification.  
+**price**:  price in USD  
+**carat**:  weight of the diamond  
+**cut**:  quality of the cut (Fair, Good, Very Good, Premium, Ideal)  
+**color**:  diamond colour, from J (worst) to D (best)  
+**clarity**:  a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))  
+**x**:  length in mm  
+**y**: width in mm  
+**z**: depth in mm  
+**depth**: total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)  
+**table**: width of top of diamond relative to widest point (43--95)  
+**city**: city where the diamonds is reported to be sold.  
+**id**: only for test & sample submission files, id for prediction sample identification.  
   
 
 ## **Project Main Stack**
@@ -148,8 +148,7 @@ While using a grid of parameter settings is currently the most widely used metho
 
 The best result I got was using the RandomForestRegressor() since it obtained the lowest RMSE. 
 
-Even if not the best prediction in the class, I'm proud since I learned something new and I'm  
-
+Even if not the best prediction, I'm proud since I learned something new and 
 ## The best part is not always to win, but to learn! ## 
 
 ![Image](https://peacewords.us/wp-content/uploads/2021/03/NelsonMandelaquotes-.jpg)

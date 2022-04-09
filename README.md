@@ -25,18 +25,18 @@ You can also download the data from kaggle: https://www.kaggle.com/competitions/
   
   
 #### Feature Description ####
-*price*:  price in USD  
-*carat*:  weight of the diamond  
-*cut*:  quality of the cut (Fair, Good, Very Good, Premium, Ideal)  
-*color*:  diamond colour, from J (worst) to D (best)  
-*clarity*:  a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))  
-*x*:  length in mm  
-*y*: width in mm  
-*z*: depth in mm  
-*depth*: total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)  
-*table*: width of top of diamond relative to widest point (43--95)  
-*city*: city where the diamonds is reported to be sold.  
-*id*: only for test & sample submission files, id for prediction sample identification.  
+**price*:  price in USD  
+**carat*:  weight of the diamond  
+**cut*:  quality of the cut (Fair, Good, Very Good, Premium, Ideal)  
+**color*:  diamond colour, from J (worst) to D (best)  
+**clarity*:  a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))  
+**x*:  length in mm  
+**y*: width in mm  
+**z*: depth in mm  
+**depth*: total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)  
+**table*: width of top of diamond relative to widest point (43--95)  
+**city*: city where the diamonds is reported to be sold.  
+**id*: only for test & sample submission files, id for prediction sample identification.  
   
 
 ## **Project Main Stack**
@@ -102,13 +102,13 @@ Note: Using random_state=some_number, we guarantee that the split will be always
 
 This will actually be performed after we  train, test and predict with our modules, BUT since I will be using the following regression metrics to evaluate and compare the performance of the different modules, I would think is better to explain them before hand.   
 
-1. **"Mean absolute error"**  
+1. **Mean absolute error**  
 Mean Absolute Error refers to the mean of the absolute values of each prediction error on all instances of the test data-set. The prediction error is the difference between the actual value and the predicted value for that instance.
 
-2. **"R-squared score"**  
+2. **R-squared score**  
 R-squared is a statistical measure that states how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
 
-3. **"Root mean squared error"**  
+3. **Root mean squared error**  
  It is the square root of the sum of the square of the difference between the predicted and actual target variables, divided by the number of data points.
 
 ## Now, making the machine learn! ##
@@ -118,26 +118,26 @@ R-squared is a statistical measure that states how close the data are to the fit
 
 After collecting and processing all the ingredients now it’s time to try different recipes and see which one tastes the best.
 I worked with several models like:
-1. **"Linear Regression":*  
+1. **Linear Regression:**  
 Linear regression is used for finding a linear relationship between the target and one or more predictors. 
-2. **"ElasticNet"*   
+2. **ElasticNet**   
 ElasticNet is a linear regression model trained with both l1 and l2 -norm regularization of the coefficients. This combination allows for learning a sparse model where few of the weights are non-zero like Lasso, while still maintaining the regularization properties of Ridge. We control the convex combination of l1 and l2 using the l1_ratio parameter."
-3. **"Decision tree Regression:"*  
+3. **Decision tree Regression:**  
 A decision tree is a supervised machine learning model used to predict a target by learning decision rules from features. As the name suggests, we can think of this model as breaking down our data by making a decision based on asking a series of questions.  
-4. **"Stochastic Gradient Descent (SGD)"*  
+4. **Stochastic Gradient Descent (SGD)**  
 SGD is a simple yet very efficient approach to fitting linear classifiers and regressors under convex loss functions such as (linear) Support Vector Machines and Logistic Regression. Even though SGD has been around in the machine learning community for a long time, it has received a considerable amount of attention just recently in the context of large-scale learning.
-5. **"RandomForestRegressor":*   
+5. **RandomForestRegressor:**   
 The sklearn.ensemble module includes two averaging algorithms based on randomized decision trees: the RandomForest algorithm and the Extra-Trees method. Both algorithms are perturb-and-combine techniques [B1998] specifically designed for trees. This means a diverse set of classifiers is created by introducing randomness in the classifier construction. The prediction of the ensemble is given as the averaged prediction of the individual classifiers.  
-6. **"GradientBoostingRegressor":*  
+6. **GradientBoostingRegressor:**  
 Gradient Tree Boosting or Gradient Boosted Decision Trees (GBDT) is a generalization of boosting to arbitrary differentiable loss functions. GBDT is an accurate and effective off-the-shelf procedure that can be used for both regression and classification problems in a variety of areas including Web search ranking and ecology.
 The module sklearn.ensemble provides methods for both classification and regression via gradient boosted decision trees.
-7. **"Regularization"*  
+7. **Regularization**  
 One of the major aspects of training your machine learning model is avoiding overfitting. The model will have a low accuracy if it is overfitting. This happens because your model is trying too hard to capture the noise in your training dataset. By noise, we mean the data points that don’t represent the true properties of your data, but random chance. Learning such data points, makes your model more flexible, at the risk of overfitting. Regularization is a form of regression, that constrains/ regularizes or shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, to avoid the risk of overfitting.
 Ridge and Lasso methods are used for regularization. Generally, regularization is combined with regression techniques to avoid any overfitting.
 
 ## Hyper-Parameters Optimization or Tunning ##
 
-**"RandomizedSearchCV"**  
+**RandomizedSearchCV**  
 
 While using a grid of parameter settings is currently the most widely used method for parameter optimization, other search methods have more favourable properties. RandomizedSearchCV implements a randomized search over parameters, where each setting is sampled from a distribution over possible parameter values. This has two main benefits over an exhaustive search:
 

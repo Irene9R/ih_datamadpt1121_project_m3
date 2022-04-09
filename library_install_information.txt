@@ -1,0 +1,77 @@
+command (Windows 64)
+
+conda install -c anaconda python
+pip install -U scikit-learn
+pip install matplotlib
+pip install pandas
+pip install numpy
+pip install db-sqlite3
+
+
+
+
+
+Jupyter Notebook (librerias)
+
+import sqlite3
+import numpy as np
+import pandas as pd
+from tabulate import tabulate
+
+# Gráficos
+# ==============================================================================
+import matplotlib.pyplot as plt
+from matplotlib import style
+import matplotlib.ticker as ticker
+import seaborn as sns
+
+# Preprocesado y modelado
+# ==============================================================================
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import minmax_scale
+from sklearn.preprocessing import MaxAbsScaler
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import RobustScaler
+from sklearn.preprocessing import Normalizer
+from sklearn.preprocessing import QuantileTransformer
+from sklearn.preprocessing import PowerTransformer
+from sklearn import linear_model
+from sklearn.linear_model import ElasticNet
+from sklearn.linear_model import Ridge
+from sklearn.svm import SVR
+from sklearn.linear_model import SGDRegressor
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RepeatedKFold
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.datasets import make_blobs
+from sklearn.metrics import euclidean_distances
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import Ridge
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import RandomizedSearchCV
+
+from skopt.space import Real, Integer
+from skopt.utils import use_named_args
+from skopt import gp_minimize
+from skopt.plots import plot_convergence
+
+# Varios
+# ==============================================================================
+import multiprocessing
+import random
+from itertools import product
+from fitter import Fitter, get_common_distributions
+
+
+
+
+
+
+

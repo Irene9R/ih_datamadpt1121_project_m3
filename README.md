@@ -5,6 +5,9 @@ Irene Rengifo - Project Module 3 - Data Analytics Part-Time Bootcamp - Nov 2021 
 
 ![Image](https://media.baamboozle.com/uploads/images/161225/1617025270_318369_gif-url.gif)
 	
+## Unfortunately is not that simple!! ##
+
+![Image](https://c.tenor.com/JDvDKe6p0bUAAAAd/loop-arnold.gif)
 
 ## **Goal** ##
 In this Kaggle competition the aim is to predict the price of diamonds based on their characteristics. You should get the minimum RMSE to win the competition. 
@@ -78,6 +81,8 @@ There is a noticeable trend in values in all three features. This gives the flex
 
 I used a correlation matrix and plot the heatmap in order to get the correlation coefficients between variables. Since I want to predict the price of a diamond, I focused on the correlation between price vs all other columns using .corr().
 
+![Image(C:\Users\irene\Documents\ironhack\ih_datamadpt1121_project_m3\images)
+
 After reviewing it, it was clear that the following features had a low score, this means they are least correlated with the price of a diamond:  
 cut  
 color  
@@ -146,7 +151,7 @@ While using a grid of parameter settings is currently the most widely used metho
 
 ## My Best Prediction ## 
 
-The best result I got was using the RandomForestRegressor() since it obtained the lowest RMSE. 
+The best result I got was **submission 6** using the RandomForestRegressor() since it obtained the lowest RMSE.  
 
 Even if not the best prediction, I'm proud since I learned something new and 
 ## The best part is not always to win, but to learn! ## 
